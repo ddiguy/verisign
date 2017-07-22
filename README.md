@@ -3,6 +3,7 @@
 <br>
 Purpose of <b>get-verisign-zones.py</b> script is to export domains from Verisign<br>
 <br>
+
 You can see the documentation for their REST API  [Verisign REST API Swagger](https://mdns.verisign.com/rest/rest-doc/index.html)
 
 This script exports all domains.  Before using it, you'll need to edit the <b><i>apikey</b></i> and <b><i>account_id</b></i> variables.  See detailed information below in the <b>Usage Example</b> section.<br>
