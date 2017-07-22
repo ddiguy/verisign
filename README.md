@@ -35,7 +35,7 @@ These are configurable items in the script:
 <br>
 The script assumes you don't need to go through a proxy.  If you have a proxy setup at work, then edit the variables section of the script and put in the correct proxy for <b><i>http_proxy</i></b> & <b><i>https_proxy</i></b>.<br>
 <br>
-You will also need to change three lines of the script from:<br>
+You will also need to change this line in the script from:<br>
 
 ```sh
 verify=False
