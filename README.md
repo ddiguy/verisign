@@ -1,15 +1,11 @@
 # verisign<br>
 > Purpose is to export list of domains from Verisign<br>
 <br>
-Purpose of script is to export domains from Verisign<br>
+Purpose of <b>get-verisign-zones.py</b> script is to export domains from Verisign<br>
 <br>
-You can see the documentation for their REST API.  Note, I find that the documentation is only viewable on Firefox and Chrome.  It doesn't work with Safari for my system.
+You can see the documentation for their REST API.  [Verisign REST API Swagger](https://mdns.verisign.com/rest/rest-doc/index.html)
 
-[Verisign REST API Swagger](https://mdns.verisign.com/rest/rest-doc/index.html)
-
-<br>This script exports active domains.  You can adjust the results by modifying the <b><i>fields</i></b> variable.  See detailed information below in the <b>Usage Example</b> section.<br>
-<br>
-If your company requires two factor authentication, you can ask your Mark Monitor account rep to create a read-only API user account that won't require 2FA.<br>
+<br>This script exports all domains.  Before using it, you'll need to edit the <b><i>apikey</b></i> and <b><i>account_id</b></i> variables.  See detailed information below in the <b>Usage Example</b> section.<br>
 <br>
 I suggest that you use a read-only API user as a best practice.<br>
 <br>
@@ -19,9 +15,8 @@ I suggest that you use a read-only API user as a best practice.<br>
 Python 3.6 installed<br>
 <br>
 The following modules installed:<br>
-1.  getpass<br>
-2.  json<br>
-3.  requests<br>
+1.  json<br>
+2.  requests<br>
 <br>
 
 ## Usage example
@@ -29,16 +24,9 @@ The following modules installed:<br>
 To run this from command line:<br>
 <br>
 ```sh
-./get-mark_monitor-data.py
+./get-verisign-zones.py
 ```
 <br>
-
-The script performs these 4 things:<br>
-1.  Creates a session
-2.  Login with username/password and get a cookie
-3.  Search for all domains with specific status
-4.  Log out
-
 These are configurable items in the script:
 <br>
 <b>1.  Proxy Information:</b><br>
@@ -55,22 +43,6 @@ to<br>
 proxies=proxyDict, verify=False
 ```
 
-<br>
-<b>2.  Search data used:</b><br>
-<br>
-The script adds the domain to the output file if the value is one of these:<br>
-<br>
-1.  abandoned<br>
-2.  registered locked<br>
-3.  registered unlocked<br>
-4.  registrar hold<br>
-5.  registered premium locked<br>
-6.  registered super locked<br><br>
-
-To view the complete list of possible domain statuses, look at [Mark Monitor Domain Statuses](https://domains.markmonitor.com/domains/setup/restapi/#!/Domain/findDomainById)
-
-<br>If you want to adjust the domains returned, edit the <b><i>fields</i></b> variable.<br>
-
 ## Release History
 
 * 0.0.1
@@ -82,11 +54,11 @@ Brian Bullard – [@BrianBullard94](https://twitter.com/BrianBullard94) – dns.
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
-[https://github.com/ddiguy/mark-monitor](https://github.com/ddiguy)
+[https://github.com/ddiguy/verisign](https://github.com/ddiguy)
 
 ## Contributing
 
-1. Fork it (<https://github.com/ddiguy/mark-monitor/fork>)
+1. Fork it (<https://github.com/ddiguy/verisign/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
