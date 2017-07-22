@@ -50,7 +50,7 @@ tday = today.strftime ("%Y-%m-%d")
 
 """
 Proxy settings
-If you need to set a proxy, then change this line 3 times in this script:
+If you need to set a proxy, then change this line in the script:
     verify=False
 to
     proxies=proxyDict, verify=False
