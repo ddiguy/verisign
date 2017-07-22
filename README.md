@@ -47,6 +47,17 @@ to
 proxies=proxyDict, verify=False
 ```
 
+<b>2.  Number of pages:</b><br>
+<br>
+<br>
+The script assumes that you have 10,000 or less zones with Verisign.  They limit the return results to 500 per page.  Increase the enumberate number from 21 to allow you to export all zones.  For example, if you have 15,000 zones change 21 to 31.<br>
+<br>
+Change the number 21 in this line in script:<br>
+
+```sh
+h = enumerate(range(1, 21), 1)
+```
+
 ## Release History
 
 * 0.0.1
