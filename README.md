@@ -65,7 +65,7 @@ h = enumerate(range(1, 21), 1)
 
 ## Meta
 
-Brian Bullard – [@BrianBullard94](https://twitter.com/BrianBullard94) – dns.dhcp.ipam@gmail.com
+Brian Bullard – [@ddi_dns](https://twitter.com/ddi_dns) – dns.dhcp.ipam@gmail.com
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
