@@ -17,8 +17,6 @@ Purpose and usage
 ================================================================================
 Written by Brian Bullard, https://github.com/ddiguy/
 
-https://twitter.com/BrianBullard94
-
 Purpose of script is to export domains from Verisign
 
 This script assumes that you have created an API key.  If you haven't created
